@@ -1,0 +1,42 @@
+
+.title{
+    text-align: center;
+    color: blue;
+    font-style: italic;
+    
+
+}
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:aquamarine;
+    text-align: center;
+
+    
+}
+
+#button{
+    background-color: red;
+    font-size: large;
+    color: blanchedalmond;
+    font-weight: bold;
+    
+}
+
+
+.links{
+    color: red;
+    
+}
+iframe{
+height: 200px;
+width: 500px;
+
+}
+#visit-us{
+    color: black;
+    background-color: green;
+    height: 20px;
+    width: 60px;
+}
