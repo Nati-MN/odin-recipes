@@ -1,0 +1,33 @@
+.Title {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: royalblue;
+    text-decoration: underline;
+    
+}
+
+.body {
+    font-size: 18px;
+}
+
+.ingredients {
+    background-color: lightskyblue;
+    font-style: oblique;
+    
+}
+
+.direction {
+    background-color: lightskyblue;
+    font-style: oblique;
+}
+
+.unordered-list {
+    color:darkgreen; 
+    font-style: oblique;
+}
+
+.ordered-list {
+    color:darkgreen; 
+    font-style: oblique;
+}
