@@ -1,0 +1,35 @@
+.Title {
+    color: purple;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.body-whole {
+    background-color: blanchedalmond;
+}
+
+.sub-title {
+    color: darkgoldenrod;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.ingredients,
+.directions {
+    color: darkblue;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.unordered-list, 
+.ordered-list {
+    color: darkolivegreen;
+    font-weight: 800;
+    font-size: 18px;
+}
