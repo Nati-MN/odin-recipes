@@ -1,0 +1,21 @@
+.Ingredient { 
+    color: blueviolet;
+    text-align: left;
+    padding-left: 40px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.header,
+.body {
+    background-color:white;
+    font-size: 20px;
+    padding-left: 80px ;
+    
+}
+#kebap {
+
+width: 100px;
+height: 100px;
+}
