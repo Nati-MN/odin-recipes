@@ -1,56 +1,147 @@
- <!DOCTYPE html>
-        <html lang="en">
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odin Recipes by Nati</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-                <meta charset="UTF-8">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><i class="fa-solid fa-utensils"></i> Odin <span>Recipes</span></a>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="#recipes">Rezepte</a>
+        <a href="#about">Über mich</a>
+      </nav>
+    </div>
+  </header>
 
-        <head>
-            <link rel="stylesheet" href="style.css">
-                <title>Odin Recipes</title>
-                <h1><div class="title">Odin Recipes by Nati</div></h1>    
-        </head>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow"><i class="fa-solid fa-star"></i> Handverlesene Lieblingsrezepte</p>
+      <h1>Kochen, das <span>glücklich</span> macht</h1>
+      <p>Einfache, ehrliche Rezepte zum Nachkochen – von herzhaftem Kebab bis zu süßem Tiramisu. Alles Schritt für Schritt erklärt.</p>
+      <div class="hero-actions">
+        <a href="#recipes" class="btn btn-primary"><i class="fa-solid fa-bowl-food"></i> Rezepte entdecken</a>
+        <a href="#about" class="btn btn-outline">Über dieses Projekt</a>
+      </div>
+    </div>
+  </section>
 
-            <body>
-                <div 
-                class="pic"> <img src="https://www.shutterstock.com/image-photo/vegetarian-food-background-organic-healthy-260nw-658524046.jpg">
-                </div>
-                <div id="after-photo">
+  <section class="recipes-section" id="recipes">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow-text">Meine Rezepte</span>
+        <h2>Vier Favoriten aus meiner Küche</h2>
+        <p>Von herzhaft bis süß – jedes Rezept ist getestet, für gut befunden und leicht nachzukochen.</p>
+      </div>
 
-                <i>
-        <div class="links">   
+      <div class="recipe-grid">
 
-                <a href="recipes/Kebab.html"> 
-                                <button id="button">Kebab Recipe</button>
-                </a>       
-        <br>
-        <br>
-                <a href="recipes/Proteinshake.html">
-                            <button id="button">Protein Shake Recipe</button>
-                </a>
-                    
-        <br>
-        <br>
-                <a href="recipes/Pizza.html">
-                            <button id="button">Pizza Recipe</button>
-                        </a>
-                
+        <a href="recipes/kebab.html" class="recipe-card">
+          <div class="thumb">
+            <img src="https://www.tuerkische-rezepte.net/wp-content/uploads/2021/09/doener-kebab-1024x814.jpg" alt="Döner Kebab">
+          </div>
+          <div class="card-body">
+            <span class="recipe-tag">Herzhaft</span>
+            <h3>Nr. 1 Kebab</h3>
+            <p>Saftiger, würziger Döner-Kebab aus dem Ofen – Fast-Food-Qualität, hausgemacht.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 1 Std 30 Min</span>
+              <span><i class="fa-solid fa-fire"></i> 284 kcal</span>
+            </div>
+            <span class="card-link">Rezept ansehen <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="recipes/pizza.html" class="recipe-card">
+          <div class="thumb">
+            <img src="https://www.eat-this.org/wp-content/uploads/2020/06/eat_this_die_perfekte_vegane_pizza-22-1340x894.jpg" alt="Hausgemachte Pizza">
+          </div>
+          <div class="card-body">
+            <span class="recipe-tag">Vegetarisch</span>
+            <h3>Homemade Pizza</h3>
+            <p>Knusprige Pizza mit Tomaten, Feta und drei Käsesorten – in 30 Minuten fertig.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 30 Min</span>
+              <span><i class="fa-solid fa-users"></i> 2 Pizzen</span>
+            </div>
+            <span class="card-link">Rezept ansehen <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="recipes/proteinshake.html" class="recipe-card">
+          <div class="thumb">
+            <img src="https://fitfoodiefinds.com/wp-content/uploads/2020/01/shakes-683x1024.jpg" alt="Protein Shake">
+          </div>
+          <div class="card-body">
+            <span class="recipe-tag">Fitness</span>
+            <h3>Whey Protein Shake</h3>
+            <p>Schokoladiger Protein-Shake mit Banane und Erdnussbutter – der perfekte Post-Workout-Snack.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 5 Min</span>
+              <span><i class="fa-solid fa-dumbbell"></i> High Protein</span>
+            </div>
+            <span class="card-link">Rezept ansehen <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="recipes/tiramisu.html" class="recipe-card">
+          <div class="thumb">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=800&auto=format&fit=crop" alt="Tiramisu">
+          </div>
+          <div class="card-body">
+            <span class="recipe-tag">Dessert</span>
+            <h3>Klassisches Tiramisu</h3>
+            <p>Cremiges, italienisches Tiramisu mit Espresso und Mascarpone – ganz ohne Backen.</p>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock"></i> 30 Min + Kühlzeit</span>
+              <span><i class="fa-solid fa-mug-hot"></i> Ohne Backen</span>
+            </div>
+            <span class="card-link">Rezept ansehen <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <span class="eyebrow-text">Über dieses Projekt</span>
+        <h2>Odin Recipes</h2>
+        <p>Diese Seite ist im Rahmen des "Odin Recipes"-Projekts von The Odin Project entstanden – eine Sammlung meiner liebsten Rezepte, sauber aufbereitet mit HTML &amp; CSS.</p>
+        <p>Schau vorbei, koch mit und lass es dir schmecken!</p>
+        <div class="map-card">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21270.775216870352!2d16.386513985087!3d48.20956476089342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d073f4daba163%3A0xfce7699ce9a8b1f4!2sPrater!5e0!3m2!1sen!2sat!4v1680358766007!5m2!1sen!2sat"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
-            <br>
-            <br>
+      </div>
+    </div>
+  </section>
 
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21270.775216870352!2d16.
-                        386513985087!3d48.20956476089342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d073
-                        f4daba163%3A0xfce7699ce9a8b1f4!2sPrater!5e0!3m2!1sen!2sat!4v1680358766007!5m2!1sen!2sat">
-                </iframe><br>
-                <a href="index.html">
-                <button id="visit-us" class="visit">visit us</button></a>
-                
-                
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="logo"><i class="fa-solid fa-utensils"></i> Odin <span>Recipes</span></div>
+      <p>Created with THEODINPROJECT &middot; &copy; 2026</p>
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
 
-    <br><br>
-    <br><br>
-                    
-                    <div class="bottom"> Created with THEODINPROJECT</div>
-           
-         </body>
+</body>
 </html>
