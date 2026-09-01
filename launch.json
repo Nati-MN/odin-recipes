@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "odin-recipes-preview",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8935"],
+      "port": 8935
+    }
+  ]
+}
