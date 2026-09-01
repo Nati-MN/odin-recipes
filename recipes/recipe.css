@@ -1,0 +1,270 @@
+/* ==========================================================================
+   Odin Recipes — shared styles for individual recipe pages
+   (loaded together with /css/style.css)
+   ========================================================================== */
+
+.breadcrumb {
+  padding: 20px 0 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.breadcrumb a {
+  color: var(--terracotta-dark);
+  font-weight: 600;
+}
+
+.breadcrumb i {
+  font-size: 0.7rem;
+  margin: 0 6px;
+  color: var(--muted);
+}
+
+/* ---------- Recipe hero ---------- */
+.recipe-hero {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.recipe-hero .recipe-photo {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  height: 340px;
+}
+
+.recipe-hero .recipe-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recipe-hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 14px;
+}
+
+.recipe-hero .lede {
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+.recipe-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.recipe-stats .stat-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--white);
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius-sm);
+  padding: 12px 18px;
+}
+
+.recipe-stats .stat-pill i {
+  color: var(--terracotta);
+  font-size: 1.1rem;
+}
+
+.recipe-stats .stat-pill .stat-value {
+  display: block;
+  font-weight: 700;
+  color: var(--charcoal);
+  font-size: 0.95rem;
+}
+
+.recipe-stats .stat-pill .stat-label {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Body layout: ingredients + steps ---------- */
+.recipe-body {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+  padding-bottom: 70px;
+  align-items: start;
+}
+
+.ingredients-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 30px 26px;
+  position: sticky;
+  top: 100px;
+}
+
+.ingredients-card h2 {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ingredients-card h2 i {
+  color: var(--terracotta);
+}
+
+.ingredients-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 18px;
+}
+
+.ingredients-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(43, 33, 24, 0.12);
+  font-size: 0.95rem;
+  color: var(--charcoal-soft);
+}
+
+.ingredients-card li:last-child {
+  border-bottom: none;
+}
+
+.ingredients-card li i {
+  color: var(--olive);
+  margin-top: 3px;
+}
+
+.steps-section h2 {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.steps-section h2 i {
+  color: var(--terracotta);
+}
+
+.steps-list {
+  list-style: none;
+  padding: 0;
+  counter-reset: step;
+  display: grid;
+  gap: 18px;
+}
+
+.steps-list li {
+  counter-increment: step;
+  position: relative;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-soft);
+  padding: 20px 22px 20px 62px;
+  color: var(--charcoal-soft);
+}
+
+.steps-list li::before {
+  content: counter(step);
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--terracotta);
+  color: var(--white);
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+/* ---------- Nutrition facts ---------- */
+.nutrition-card {
+  margin-top: 34px;
+  background: var(--cream-dark);
+  border-radius: var(--radius);
+  padding: 26px 30px;
+}
+
+.nutrition-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.nutrition-card .nutrition-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  text-align: center;
+}
+
+.nutrition-grid .nutrient-value {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--terracotta-dark);
+}
+
+.nutrition-grid .nutrient-label {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.back-link-wrap {
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .recipe-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-hero .recipe-photo {
+    height: 260px;
+    order: -1;
+  }
+
+  .recipe-body {
+    grid-template-columns: 1fr;
+  }
+
+  .ingredients-card {
+    position: static;
+  }
+}
+
+@media (max-width: 520px) {
+  .recipe-hero h1 {
+    font-size: 2rem;
+  }
+
+  .nutrition-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
