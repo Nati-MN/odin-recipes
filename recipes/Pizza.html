@@ -1,51 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-    <meta charset="UTF-8">
-        <head>
-            <link rel="stylesheet" href="pizza.css">
-            <title>Pizza Homemade</title>
-            <div class="Title">How to Make Homemade Pizza</div>
-            <img src="https://www.eat-this.org/wp-content/uploads/2020/06/eat_this_die_perfekte_vegane_pizza-22-1340x894.jpg" width="230px" height="200px">
-        </head>
-        <br>
-        <br>
-        <!--to insert a image type = <img src=""  and the copy the image link from a website with the image that you want
-        with the two functions after <img src="image" 
-                                                    width="150px" height="150px"> 
-        you can change the width and height of the image   ( ͡ᵔ ͜ʖ ͡ᵔ)👌-->
-        <div class="body"><body>
-    <i>This is a fantastic version of an Italian classic. <br>
-        The feta cheese adds a rich flavor that brings this dish to life. 
-        Incredibly easy and incredibly delicious!</i>
-    <br>
-    <br>
-<div class="ingredients"><h2>Ingredients</h2></div>
-    <div class="unordered-list"><ul>
-        <li>¼ cup olive oil</li>
-        <li>1 tablespoon minced garlic</li>
-        <li>½ teaspoon sea salt</li>
-        <li>8 Roma tomatoes, sliced</li>
-        <li>2 (12 inch) pre-baked pizza crusts</li>
-        <li>8 ounces shredded Mozzarella cheese</li>
-        <li>4 ounces shredded Fontina cheese</li>
-        <li>10 fresh basil leaves, washed, dried</li>
-        <li>½ cup freshly grated Parmesan cheese</li>
-        <li>½ cup crumbled feta cheese</li>
-    </ul></div>
-<div class="direction"><h2>Directions</h2></div>
-    <div class="ordered-list"><ol>
-        <li>Stir together olive oil, garlic, and salt; toss with tomatoes, and allow to stand for 15 minutes. 
-            Preheat oven to 400 degrees F (200 degrees C).</li>
-            <br>
-        <li>Brush each pizza crust with some of the tomato marinade. 
-            Sprinkle the pizzas evenly with Mozzarella and Fontina cheeses. 
-            Arrange tomatoes overtop, then sprinkle with shredded basil, Parmesan, 
-            and feta cheese.</li>
-            <br>
-        <li>Bake in preheated oven until the cheese is bubbly and golden brown, about 10 minutes.</li>
-    </ol></div>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homemade Pizza &middot; Odin Recipes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/recipe.css">
+</head>
+<body>
 
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><i class="fa-solid fa-utensils"></i> Odin <span>Recipes</span></a>
+      <nav class="main-nav">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#recipes">Rezepte</a>
+        <a href="../index.html#about">Über mich</a>
+      </nav>
+    </div>
+  </header>
 
-     </body>
-</div>
+  <div class="container">
+    <p class="breadcrumb"><a href="../index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> Pizza</p>
+
+    <section class="recipe-hero">
+      <div>
+        <span class="recipe-tag">Vegetarisch</span>
+        <h1>How to Make Homemade Pizza</h1>
+        <p class="lede">Eine fantastische Version eines italienischen Klassikers. Der Feta bringt einen kräftigen Geschmack, der dieses Gericht zum Leben erweckt – unglaublich einfach und unglaublich lecker!</p>
+        <div class="recipe-stats">
+          <div class="stat-pill">
+            <i class="fa-regular fa-clock"></i>
+            <span>
+              <span class="stat-value">30 Min</span>
+              <span class="stat-label">Gesamtzeit</span>
+            </span>
+          </div>
+          <div class="stat-pill">
+            <i class="fa-solid fa-gauge-high"></i>
+            <span>
+              <span class="stat-value">Leicht</span>
+              <span class="stat-label">Schwierigkeit</span>
+            </span>
+          </div>
+          <div class="stat-pill">
+            <i class="fa-solid fa-pizza-slice"></i>
+            <span>
+              <span class="stat-value">2 Pizzen</span>
+              <span class="stat-label">Ergibt</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="recipe-photo">
+        <img src="https://www.eat-this.org/wp-content/uploads/2020/06/eat_this_die_perfekte_vegane_pizza-22-1340x894.jpg" alt="Hausgemachte Pizza mit Tomaten und Feta">
+      </div>
+    </section>
+
+    <section class="recipe-body">
+      <aside class="ingredients-card">
+        <h2><i class="fa-solid fa-carrot"></i> Zutaten</h2>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i> ¼ Tasse Olivenöl</li>
+          <li><i class="fa-solid fa-circle-check"></i> 1 EL gehackter Knoblauch</li>
+          <li><i class="fa-solid fa-circle-check"></i> ½ TL Meersalz</li>
+          <li><i class="fa-solid fa-circle-check"></i> 8 Roma-Tomaten, in Scheiben</li>
+          <li><i class="fa-solid fa-circle-check"></i> 2 vorgebackene Pizzaböden (30 cm)</li>
+          <li><i class="fa-solid fa-circle-check"></i> 225 g geriebener Mozzarella</li>
+          <li><i class="fa-solid fa-circle-check"></i> 110 g geriebener Fontina</li>
+          <li><i class="fa-solid fa-circle-check"></i> 10 frische Basilikumblätter, gewaschen &amp; getrocknet</li>
+          <li><i class="fa-solid fa-circle-check"></i> ½ Tasse frisch geriebener Parmesan</li>
+          <li><i class="fa-solid fa-circle-check"></i> ½ Tasse zerbröckelter Feta</li>
+        </ul>
+      </aside>
+
+      <div class="steps-section">
+        <h2><i class="fa-solid fa-list-ol"></i> Zubereitung</h2>
+        <ol class="steps-list">
+          <li>Olivenöl, Knoblauch und Salz verrühren, mit den Tomaten vermengen und 15 Minuten ziehen lassen. Backofen auf 200 °C (400 °F) vorheizen.</li>
+          <li>Jeden Pizzaboden mit etwas von der Tomatenmarinade bestreichen. Gleichmäßig mit Mozzarella und Fontina bestreuen. Tomaten darauf verteilen, dann mit Basilikum, Parmesan und Feta bestreuen.</li>
+          <li>Im vorgeheizten Ofen backen, bis der Käse blubbert und goldbraun ist, etwa 10 Minuten.</li>
+        </ol>
+
+        <div class="nutrition-card">
+          <h3>Nährwerte</h3>
+          <p class="nutrition-note">pro Portion (⅛ Pizza)</p>
+          <div class="nutrition-grid">
+            <div>
+              <span class="nutrient-value">310</span>
+              <span class="nutrient-label">Kalorien</span>
+            </div>
+            <div>
+              <span class="nutrient-value">17g</span>
+              <span class="nutrient-label">Fett</span>
+            </div>
+            <div>
+              <span class="nutrient-value">27g</span>
+              <span class="nutrient-label">Kohlenhydrate</span>
+            </div>
+            <div>
+              <span class="nutrient-value">14g</span>
+              <span class="nutrient-label">Protein</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="back-link-wrap">
+      <a href="../index.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Zurück zu allen Rezepten</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="logo"><i class="fa-solid fa-utensils"></i> Odin <span>Recipes</span></div>
+      <p>Created with THEODINPROJECT &middot; &copy; 2026</p>
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
