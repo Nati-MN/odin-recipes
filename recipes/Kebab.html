@@ -1,61 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
-    
+<html lang="de">
 <head>
-<div class="header">
-    <link rel="stylesheet" href="kebab.css">
-    <meta charset="UTF-8">
-    <h1>Nr. 1 KEBAB - Recipe</h1>
-    <title>Kebab Recipe</title>
-</div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nr. 1 Kebab &middot; Odin Recipes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/recipe.css">
 </head>
-
-
 <body>
-    <div class="body">
-        
-    <img src="https://www.tuerkische-rezepte.net/wp-content/uploads/2021/09/doener-kebab-1024x814.jpg" height="200" width=auto>
-        
-        
-    <div class="Ingredient">Ingredients</div>
 
-     <ul>
-        <li>1 teaspoon all-purpose flour</li>
-            <br>
-            <li>1 teaspoon dried oregano</li>
-            <br> 
-            <li>½ teaspoon salt</li>
-            <br>
-            <li>½ teaspoon garlic powder</li>
-            <br>
-            <li>½ teaspoon onion powder</li>
-            <br>
-            <li>½ teaspoon dried Italian herb seasoning</li>
-            <br>
-            <li>¼ teaspoon ground black pepper</li>
-            <br>
-            <li>¼ teaspoon cayenne pepper</li>
-            <br>
-            <li>1 ¼ pounds ground lamb</li>
-    </ul>
-    
-        <br> <h4>Steps</h4>
-        <br>
-        <ol>
-            <li>Preheat the oven to 350 degrees F (175 degrees C).</li><br>
-
-            <li>Combine flour, oregano, salt, garlic powder, onion powder, Italian seasoning, black pepper, and cayenne pepper in a large bowl. 
-            <br>Add ground lamb and knead until thoroughly mixed together, about 3 minutes.</li>
-            <br><li>Shape seasoned lamb mixture and place into a loaf pan; set on top of a baking sheet.</li>
-            <br><li>Bake in the preheated oven, turning halfway to ensure even browning, for about 1 hour and 20 minutes.</li>
-            <br><li>Wrap loaf in aluminum foil and let rest for about 10 minutes. Slice as thinly as possible to make doner kebab pieces.</li>
-        </ol>
-        <br>
-        <h4>Nutrition Facts<small>(per Serving)</small></h4>
-        <ul>
-        <sup>284</sup> Calories  <br>  <sup>19g</sup> Fat   <br> <sup>2g</sup> Carbs <br>  <sup>24g</sup> Protein
-        </ul></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><i class="fa-solid fa-utensils"></i> Odin <span>Recipes</span></a>
+      <nav class="main-nav">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#recipes">Rezepte</a>
+        <a href="../index.html#about">Über mich</a>
+      </nav>
     </div>
-    </body>
+  </header>
 
+  <div class="container">
+    <p class="breadcrumb"><a href="../index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> Kebab</p>
+
+    <section class="recipe-hero">
+      <div>
+        <span class="recipe-tag">Herzhaft</span>
+        <h1>Nr. 1 Kebab</h1>
+        <p class="lede">Saftiger, würziger Döner-Kebab aus dem Ofen, dünn aufgeschnitten wie beim Imbiss um die Ecke – nur hausgemacht und ganz ohne Fritteuse.</p>
+        <div class="recipe-stats">
+          <div class="stat-pill">
+            <i class="fa-regular fa-clock"></i>
+            <span>
+              <span class="stat-value">1 Std 30 Min</span>
+              <span class="stat-label">Gesamtzeit</span>
+            </span>
+          </div>
+          <div class="stat-pill">
+            <i class="fa-solid fa-gauge-high"></i>
+            <span>
+              <span class="stat-value">Mittel</span>
+              <span class="stat-label">Schwierigkeit</span>
+            </span>
+          </div>
+          <div class="stat-pill">
+            <i class="fa-solid fa-users"></i>
+            <span>
+              <span class="stat-value">4 Portionen</span>
+              <span class="stat-label">Ergibt</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="recipe-photo">
+        <img src="https://www.tuerkische-rezepte.net/wp-content/uploads/2021/09/doener-kebab-1024x814.jpg" alt="Döner Kebab, dünn aufgeschnitten">
+      </div>
+    </section>
+
+    <section class="recipe-body">
+      <aside class="ingredients-card">
+        <h2><i class="fa-solid fa-carrot"></i> Zutaten</h2>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i> 1 TL Weizenmehl</li>
+          <li><i class="fa-solid fa-circle-check"></i> 1 TL getrockneter Oregano</li>
+          <li><i class="fa-solid fa-circle-check"></i> ½ TL Salz</li>
+          <li><i class="fa-solid fa-circle-check"></i> ½ TL Knoblauchpulver</li>
+          <li><i class="fa-solid fa-circle-check"></i> ½ TL Zwiebelpulver</li>
+          <li><i class="fa-solid fa-circle-check"></i> ½ TL italienische Kräuter</li>
+          <li><i class="fa-solid fa-circle-check"></i> ¼ TL schwarzer Pfeffer</li>
+          <li><i class="fa-solid fa-circle-check"></i> ¼ TL Cayennepfeffer</li>
+          <li><i class="fa-solid fa-circle-check"></i> 1 ¼ lb (≈ 560 g) Lammhack</li>
+        </ul>
+      </aside>
+
+      <div class="steps-section">
+        <h2><i class="fa-solid fa-list-ol"></i> Zubereitung</h2>
+        <ol class="steps-list">
+          <li>Backofen auf 175 °C (350 °F) vorheizen.</li>
+          <li>Mehl, Oregano, Salz, Knoblauchpulver, Zwiebelpulver, italienische Kräuter, schwarzen Pfeffer und Cayennepfeffer in einer großen Schüssel vermischen. Lammhack dazugeben und etwa 3 Minuten kneten, bis alles gut vermengt ist.</li>
+          <li>Die gewürzte Fleischmasse formen und in eine Kastenform geben; die Form auf ein Backblech stellen.</li>
+          <li>Im vorgeheizten Ofen ca. 1 Stunde 20 Minuten backen, dabei zur Hälfte wenden, damit es gleichmäßig bräunt.</li>
+          <li>Den Laib in Alufolie wickeln und etwa 10 Minuten ruhen lassen. Danach so dünn wie möglich aufschneiden – fertig ist der Döner-Kebab.</li>
+        </ol>
+
+        <div class="nutrition-card">
+          <h3>Nährwerte</h3>
+          <p class="nutrition-note">pro Portion</p>
+          <div class="nutrition-grid">
+            <div>
+              <span class="nutrient-value">284</span>
+              <span class="nutrient-label">Kalorien</span>
+            </div>
+            <div>
+              <span class="nutrient-value">19g</span>
+              <span class="nutrient-label">Fett</span>
+            </div>
+            <div>
+              <span class="nutrient-value">2g</span>
+              <span class="nutrient-label">Kohlenhydrate</span>
+            </div>
+            <div>
+              <span class="nutrient-value">24g</span>
+              <span class="nutrient-label">Protein</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="back-link-wrap">
+      <a href="../index.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Zurück zu allen Rezepten</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="logo"><i class="fa-solid fa-utensils"></i> Odin <span>Recipes</span></div>
+      <p>Created with THEODINPROJECT &middot; &copy; 2026</p>
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
